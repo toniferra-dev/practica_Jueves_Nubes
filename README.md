@@ -1,18 +1,5 @@
-# plantillaFlexGrid
+# Práctica Jueves Nubes
 
-### Plantilla pensada para hacer un Fork
-(Concepto Plantilla/Template)
+Crear un tema RWD
+* Solo el _HEADER_ y el _FOOTER_
 
-__Tecnología integrada__
-- HTML5
-- CSS3
-- Sistema modular CSS3
-- Fuentes residentes
-- Media Querys
-- FlexBox
-- Grid Layout
-- Normalize + reset
-- Sass
-
-# Plantilla_Sass
-# Plantilla_Sass_Vacio

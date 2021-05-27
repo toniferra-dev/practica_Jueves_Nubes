@@ -1,3 +1,12 @@
 /* @COVER_BANNER */
 /* ********** */
 
+// Banner de Header
+.banner {
+    border-radius: 0 0 $curvaBanner $curvaBanner;
+    // Desktop
+    @media only screen and (min-width: $breakpointDesktop) {
+        border-radius: 0;
+    }
+    width: 100vw;
+}
