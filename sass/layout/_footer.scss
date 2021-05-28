@@ -32,6 +32,13 @@ footer {
         li {
             line-height: 2rem;
         }
+        &__titulo::before {
+            // pseudo($content: '', $display: block, $position: absolute)
+            @include pseudo;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
     }
 }
 

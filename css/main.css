@@ -359,10 +359,40 @@ ul {
 
 /* @VARIABLES */
 /* ********** */
-/* @TIPOGRAFÍA */
-/* ********** */
 /* @MIXIN */
 /* ********** */
+/* @TIPOGRAFÍA */
+/* ********** */
+@font-face {
+  font-family: "helveticaRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url(./font/helvetica_regular.woff2) format("woof2"), url(./font/helvetica_regular.woff) format("woof");
+}
+
+@font-face {
+  font-family: "helveticaBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(./font/helvetica_bold.woff2) format("woof2"), url(./font/helvetica_bold.woff) format("woof");
+}
+
+a {
+  color: red;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: brown;
+}
+
 /* @BOTONES */
 /* ********** */
 /* @CAROUSEL */
@@ -454,6 +484,16 @@ footer {
 .linksFooter .redes li,
 .linksFooter .menuFooter li {
   line-height: 2rem;
+}
+
+.linksFooter .redes__titulo::before,
+.linksFooter .menuFooter__titulo::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
 }
 
 .explicacionFooter {

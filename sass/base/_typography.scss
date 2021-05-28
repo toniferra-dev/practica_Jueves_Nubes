@@ -1,2 +1,10 @@
 /* @TIPOGRAFÍA */
 /* ********** */
+@include fontface("helveticaRegular", helvetica_regular);
+@include fontface("helveticaBold", helvetica_bold);
+
+// links($link, $visited, $hover, $active)
+@include links(red, pink, green, brown);
+
+
+

@@ -10,11 +10,12 @@
 // Variables
 @import './abstracts/variables';
 
+// Mixins
+@import './abstracts/mixins';
+
 // Tipografias
 @import './base/typography';
 
-// Mixins
-@import './abstracts/mixins';
 
 // Botones
 @import './components/buttons';

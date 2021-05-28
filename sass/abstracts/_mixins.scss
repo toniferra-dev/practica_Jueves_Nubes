@@ -1,2 +1,66 @@
 /* @MIXIN */
 /* ********** */
+
+// HOVER
+// Mixin/función sin parámetros
+
+@mixin link($color: black, $tamletra: uppercase) {
+    a {
+        color: $color;
+        text-decoration: none;
+        text-transform: $tamletra;
+    }
+}
+
+@mixin links($link, $visited, $hover, $active) {
+    a {
+        color: $link;
+
+        &:visited {
+            color: $visited;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+// BREAKPOINTS
+@mixin bp_smartphone {
+    @media only screen and (min-width: 320px) and (orientation: portrait) {
+        @content;
+    }
+}
+@mixin bp_tablet {
+    @media only screen and (min-width: $breakpointTablet) and (orientation: portrait) {
+        @content;
+    }
+}
+@mixin bp_desktop {
+    @media only screen and (min-width: 1000px) {
+        @content;
+    }
+}
+
+
+// BEFORE AFTER
+@mixin pseudo($content: '', $display: block, $position: absolute){
+    content: $content;
+    display: $display;
+    position: $position;
+}
+
+// FONT-FACE
+@mixin fontface($nombre, $archivo, $negrita: normal, $estilo: normal){
+    @font-face {
+        font-family: $nombre;
+        font-weight: $negrita;
+        font-style: $estilo;
+
+        src: url(./font/#{$archivo}.woff2) format('woof2'),
+             url(./font/#{$archivo}.woff) format('woof');
+    }
+}
